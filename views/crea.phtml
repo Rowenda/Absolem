@@ -1,0 +1,24 @@
+<div class="containercrea">
+
+<!-- Pour chaque objet ajouté on créé un nouveau badge. -->
+<?php foreach($creations as $creation): ?>
+
+
+        <div class="badge">
+            <div class="imgBadge">
+                <figure>
+                    <img src="img/crea/<?= htmlspecialchars($creation['img']);?>">
+                </figure>
+            </div>
+            <div class="title">
+                <?= htmlspecialchars($creation['creaTitle']); ?>
+            </div>
+            <div class="textBadge">
+                <?= htmlspecialchars($creation['creaDescription']); ?>
+            </div>
+            <small>Ajouté le  <time datetime="<?= htmlspecialchars($creation['createdAt']);?>"><?= date('d/m/Y',strtotime(htmlspecialchars($creation['createdAt']))); ?></time></small>
+        </div>
+
+
+<?php endforeach; ?>
+</div>

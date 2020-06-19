@@ -1,0 +1,15 @@
+<!-- On parcours le tableau $posts qui contient l'ensemble des articles -->
+<div class="container">
+    <div class="presentation">
+        <div class="title"><?= htmlspecialchars($presentation['PresentationTitle']); ?></div>
+        <div id="presentationContent"><?= htmlspecialchars($presentation['PresentationContent']); ?></div>
+    </div>
+    <div class="evenement">
+            <div class="title"><?= htmlspecialchars($evenement['evenementTitle']); ?></div>
+            <div id="evenementContent"><?= htmlspecialchars($evenement['evenementContent']); ?></div>
+    </div>
+    <div class="news">
+            <div class="title"><?= htmlspecialchars($news['newsTitle']); ?></div>
+            <div id="newsContent"><?= htmlspecialchars($news['newsContent']); ?></div>
+    </div>
+</div>
