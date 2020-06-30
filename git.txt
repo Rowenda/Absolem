@@ -1,0 +1,32 @@
+Etape suivante : faire un premier commit
+On va commencer par ajouter les fichiers qu'on souhaite "photographier"
+On va taper la commande git add .  : ajoute tous les fichiers à la prochaine "photo" (commit)
+Si vous voulez voir l'état de votre dépôt : git status
+On va ensuite créer notre premier commit
+git commit -m "Initial commit"
+L'option -m permet de spécifier le message associé au commit sans ouvrir d'éditeur en ligne de commande comme VIM
+
+λ git config --global user.email "badbat_69@hotmail.com
+
+Le HEAD est un pointeur vers la version actuelle de votre code
+master c'est le nom de la branche principale de votre dépôt
+Par défaut il n'existe qu'une seule branche : master
+Vous pourrez créer d'autres branches en fonction de vos besoins
+Une branche va permettre de créer une version du code
+Donc le process de travail est le suivant :
+Vous créez des fichiers, vous modifiez des fichiers pour développer une fonctionnalité.
+Une fois que vous avez terminé cette fonctionnalité, on va ajouter les fichiers avec git add .
+Puis on fait le commit git commit -m "Message associé au commit"
+
+Vous faites plusieurs commit par jour, à la fin de la journée on va envoyer nos fichiers vers le dépôt distant sur github
+Il va falloir faire le lien entre votre dépôt local et votre dépôt distant sur github
+
+
+Faire le lien entre le dépôt local et le dépôt distant :  git remote add origin https://github.com/votrepseudo/projet.git
+
+Pour changer l'URL de votre dépôt distant origin vous pouvez taper la commande : 
+git remote set-url origin https://username:password@github.com/repo.git
+En remplaçant username par votre identifant github, votre mot de passe et le nom de votre dépôt au bout
+
+Une bonne documentation pour travailler git : https://www.atlassian.com/fr/git/tutorials
+https://www.hostinger.fr/tutoriels/commandes-git/

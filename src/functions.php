@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Génère le rendu HTML d'une page
+ * Generate HTML
  */
 function render(string $view, array $values = [])
 {
@@ -10,4 +10,13 @@ function render(string $view, array $values = [])
     extract($values);
 
     include VIEWS_DIR . '/base.phtml';
+}
+
+function formatDate(string $date)
+{
+    return date('d/m/Y',strtotime($date));
+}
+
+function asset(string $asset) {
+    return BASE_URL . '/' . $asset;
 }

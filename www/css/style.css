@@ -30,9 +30,9 @@
 }
 
 .navbar li {
-    float: inline-start;
     margin-left: 50px;
     background-color: rgb(27, 121, 27);
+    display: inline-block;
 }
 
 .navbar li a {
@@ -69,6 +69,10 @@
 
 .connect {
     background-color: lightcoral;
+}
+
+.password {
+    background-color: cornflowerblue;
 }
 
 
@@ -476,4 +480,68 @@ img {
     width: 50%;
     align-items: center;
     border-left: 3mm solid #664280;
+}
+
+.newContact {
+    width: 100%;
+    clear: both;
+    height: 800px;
+    background-color: peru;
+    display: flex;
+}
+
+.userConnect {
+    width: 100%;
+    clear: both;
+    height: 600px;
+    background-color: peru;
+    display: flex;
+    border-left: 3mm solid #664280;
+}
+
+.newContact div {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.userConnect div {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+/* Gestion de la page admin */
+
+#containeradmin {
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+#adminAccueil {
+    width: 80%;
+    height: 600px
+}
+
+.adminBlock {
+    height: 200px;
+}
+
+#adminUsers {
+    width: 80%;
+    height: 400px;
+}
+
+table,
+td {
+    border: 1px solid #333;
+    background-color: #85b6c7;
+}
+
+
+/* classe pour cacher les menus */
+
+.hidden {
+    display: none !important;
 }

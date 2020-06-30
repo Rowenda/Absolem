@@ -1,14 +1,13 @@
 <div class="containertutorial">
-    <div class="tutorial">
-        <div class="tutoTitle">
+
+<!-- on récupère l'ensemble des articles en parcourant le tableau $tutos-->
+
+    <?php foreach($tutos as $tuto): ?>
+        <div class="tutorial">
+            <div class="tutoTitle"><?= htmlspecialchars($tuto['tutoTitle']); ?>
+            </div>
+            <div class="tutoText"><?= htmlspecialchars($tuto['tutoText']); ?>
+            </div>
         </div>
-        <div class="tutoText">
-        </div>
-    </div>
-    <div class="tutorial">
-        <div class="tutoTitle">
-        </div>
-        <div class="tutoText">
-        </div>
-    </div>
+    <?php endforeach; ?>
 </div>
