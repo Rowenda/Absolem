@@ -1,0 +1,52 @@
+<!-- Code HTML du formulaire de connexion administrateur -->
+<div class="containercontact">
+    <div class="newContact">
+        <form action="/www/index.php" method="post">
+            <div>
+                <label for="username">Nom d'utilisateur</label>
+                <div>
+                    <input type="username" name="username" id="username" class="crea">
+                </div>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <div>
+                    <input type="email" name="email" id="email" class="contacts">
+                </div>
+            </div>    
+            <div>
+                <label for="password">Mot de Passe</label>
+                <div>
+                    <input type="password" name="password" id="password" class="tutos">
+                </div>    
+            </div>
+            <div>
+                <label for="passwordconfirm">Confirmer Mot de Passe</label>
+                <div>
+                    <input type="password" name="passwordconfirm" id="passwordconfirm" class="connect">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="userConnect">
+        <form action="/login.php" method="post">
+            <?php if (isset($error)): ?>
+                <p class="error"><?=$error;?></p>
+            <?php endif; ?>
+            <legend>Connexion</legend>
+            <div>
+                <label for="email">Email</label>
+                <div>
+                    <input type="email" name="email" id="email" class="accueil">
+                </div>
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <div>
+                    <input type="password" name="password" id="password" class="password">
+                </div>
+            </div>
+            <input type="submit" value="Connexion">
+        </form>
+    </div>
+</div>
