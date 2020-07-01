@@ -1,14 +1,5 @@
-function onClickButton(element) {
-    event.preventDefault();
-    document.querySelectorAll('.hide').classList.Add('hidden');
-    switch (element) {
-        case 'users':
-            document.querySelector("#adminUsers").classList.remove('hidden');
-            break;
-        case 'accueil':
-            document.querySelector("#adminAccueil").classList.remove('hidden');
-            break;
-    }
+function onClickButton(event) {
+    return console.log(event.currentTarget);
 }
 
 
@@ -17,7 +8,7 @@ function onClickButton(element) {
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    document.getElementById('users').onclick = onClickButton('users');
-    document.getElementById('accueil').onclick = onClickButton('accueil');
+    document.getElementById('users').addEventListener("click", onClickButton(this));
+    document.getElementById('accueil').addEventListener("click", onClickButton(this));
 
 });
