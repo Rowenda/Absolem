@@ -12,19 +12,27 @@
         <div class="adminBlock">
             <div class="adminTitle"><?= htmlspecialchars($presentation['presentationTitle']); ?></div>
             <div class="adminContent"><?= htmlspecialchars($presentation['presentationContent']); ?></div>
+            <div><a href="<?=buildUrl('/admin/edit/presentation');?>" title="Modifier la presentation">
+            <button> Modifier ma présentation.</button>
+            </a>
+            </div>
         </div>
         <div class="adminBlock">
             <div class="adminTitle"><?= htmlspecialchars($evenement['evenementTitle']); ?></div>
             <div class="adminContent"><?= htmlspecialchars($evenement['evenementContent']); ?></div>
+            <div><a href="<?=buildUrl('/admin/edit/evenement');?>" title="Modifier les evenements">
+            <button> Modifier mes evenements.</button>
+            </a>
+            </div>
         </div>
         <div class="adminBlock">
             <div class="adminTitle"><?= htmlspecialchars($news['newsTitle']); ?></div>
             <div class="adminContent"><?= htmlspecialchars($news['newsContent']); ?></div>
-        </div>
-        <div><a href="<?=buildUrl('/admin/edit/acceuilAdmin');?>" title="Modifier l'acceuil">
-            <button> Modifier ma pâge d'acceuil </button>
+            <div><a href="<?=buildUrl('/admin/edit/news');?>" title="Modifier les news">
+            <button> Modifier mes news !</button>
             </a>
             </div>
+        </div>
     </div>
 
 <!-- Container for creation data -->

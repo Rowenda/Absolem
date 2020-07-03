@@ -1,0 +1,19 @@
+<header>
+    <h2>Modifier un  article</h2>
+</header>
+<section>
+    <form action="<?=buildUrl('/admin/edit/presentation');?>" method="post">
+        <fieldset>
+            <div>
+                <label for="title">Titre de la présentation</label>
+                <input type="text" id="PresentationTitle" name="PresentationTitle" value="<?=$presentation['PresentationTitle'];?>">
+            </div>
+            <div>
+                <label for="content">Modifier ma présentation</label>
+                <textarea  rows="8" cols="45" id="PresentationContent" name="PresentationContent"><?=$presentation['PresentationContent'];?></textarea>
+            </div>
+        </fieldset>
+        <input type="submit" value="Enregistrer">
+    </form>
+
+</section>
