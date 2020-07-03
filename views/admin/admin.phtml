@@ -1,14 +1,14 @@
 <div id="containeradmin">
     <div class="navAdmin">
         <ul>
-          <li><button id="users"> Gestion des utilisateurs </button></li>
-          <li><button id="accueil"> Gestion des messages d'accueil </button></li>
-          <li><button id="creations"> Mes cr&eacute;ations </button></li>
-          <li><button id="tuto"> Gestion des articles tutoriels </button></li>
+          <li><button id="users" value="adminUsers"> Gestion des utilisateurs </button></li>
+          <li><button id="accueil" value="adminAccueil"> Gestion des messages d'accueil </button></li>
+          <li><button id="creations" value="adminCreation"> Mes cr&eacute;ations </button></li>
+          <li><button id="tuto" value="adminTutos"> Gestion des articles tutoriels </button></li>
         </ul>    
     </div>
 <!-- Container for accueil data -->
-    <div id="adminAccueil" class="hidden hide">
+    <div id="adminAccueil" class="hidden">
         <div class="adminBlock">
             <div class="adminTitle"><?= htmlspecialchars($presentation['presentationTitle']); ?></div>
             <div class="adminContent"><?= htmlspecialchars($presentation['presentationContent']); ?></div>
@@ -21,11 +21,15 @@
             <div class="adminTitle"><?= htmlspecialchars($news['newsTitle']); ?></div>
             <div class="adminContent"><?= htmlspecialchars($news['newsContent']); ?></div>
         </div>
+        <div><a href="<?=buildUrl('/admin/edit/acceuilAdmin');?>" title="Modifier l'acceuil">
+            <button> Modifier ma pâge d'acceuil </button>
+            </a>
+            </div>
     </div>
 
 <!-- Container for creation data -->
 
-    <div id="adminCreation" class="hidden hide">
+    <div id="adminCreation" class="hidden">
         <?php foreach($creations as $creation): ?>
             <div>
                 <div class="adminTitle"><?= htmlspecialchars($creation['creaTitle']); ?></div>
@@ -41,7 +45,7 @@
 
 <!-- Container for users data -->
 
-    <div id="adminUsers" class="hidden hide">
+    <div id="adminUsers" class="hidden">
         <table>
             <thead>
                 <tr>
@@ -66,7 +70,7 @@
 
 <!-- Container for tutos data -->
 
-    <div id="adminTutos" class="hidden hide">
+    <div id="adminTutos" class="hidden">
         <?php foreach($tutos as $tuto): ?>
             <div>
                 <div class="adminTitle"><?= htmlspecialchars($tuto['tutoTitle']); ?></div>

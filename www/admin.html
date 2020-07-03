@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" />
+    <title>Les cr&eacute;ations d'Absolem</title>
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="ban">
+            <div class="banniere">
+                <h1>Page d'accueil et de redirection.</h1>
+            </div>
+            <div class="navbar">
+                <ul><button class="navdrop">Menu</button>
+                    <div class="dropdown-content">
+                        <li><a href="index.php" class="accueil">accueil</a></li>
+                        <li><a href="crea.php" class="crea">cr&eacute;ations</a></li>
+                        <li><a href="contact.php" class="contacts">contacts</a></li>
+                        <li><a href="tuto.php" class="tutos">tutoriels</a></li>
+                        <li><a href="login.php" class="connect">se connecter/s'inscrire</a></li>
+
+                        <li><a href="admin.php" class="admin">Ma page administrateur</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="containeradmin">
+            <div class="navAdmin">
+                <ul>
+                    <li><button id="users" value="adminUsers"> Gestion des utilisateurs </button></li>
+                    <li><button id="accueil" value="adminAccueil"> Gestion des messages d'accueil </button></li>
+                    <li><button id="creations" value="adminCreation"> Mes cr&eacute;ations </button></li>
+                    <li><button id="tuto" value="adminTutos"> Gestion des articles tutoriels </button></li>
+                </ul>
+            </div>
+            <!-- Container for accueil data -->
+            <div id="adminAccueil" class="hidden">
+                <div class="adminBlock">
+                    <div class="adminTitle">
+                        blabla
+                    </div>
+                    <div class="adminContent">
+                        shfgyfgsdfkk ghsdkgjfjdq
+                    </div>
+                </div>
+                <div class="adminBlock">
+                    <div class="adminTitle">
+
+                    </div>
+                    <div class="adminContent">
+
+                    </div>
+                </div>
+                <div class="adminBlock">
+                    <div class="adminTitle">
+
+                    </div>
+                    <div class="adminContent">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container for creation data -->
+
+            <div id="adminCreation" class="hidden">
+
+                <div>
+                    <div class="adminTitle">
+
+                    </div>
+                    <div class="adminContent">
+
+                    </div>
+                    <div class="adminImg">
+                        <figure>
+
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Container for users data -->
+
+            <div id="adminUsers" class="hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Utilisateurs enregistrés</th>
+                        </tr>
+                        <tr>
+                            <td>Nom d'utilisateurs</td>
+                            <td>Email d'utilisateurs</td>
+                            <td>statut d'utilisateurs</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                </table>
+            </div>
+
+            <!-- Container for tutos data -->
+
+            <div id="adminTutos" class="hidden">
+
+                <div>
+                    <div class="adminTitle">
+
+                    </div>
+                    <div class="adminContent">
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+        <script src="javascript/jquery-3.5.1.min.js"></script>
+        <script src="javascript/main.js"></script>
+    </main>
+
+    <footer class="foot">
+        <div>
+            <p>Site créé par Baptiste Giorgi &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>

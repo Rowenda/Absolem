@@ -20,3 +20,14 @@ function formatDate(string $date)
 function asset(string $asset) {
     return BASE_URL . '/' . $asset;
 }
+
+function buildUrl(string $route, array $params = []): string
+{
+    $url = BASE_URL . $route; // /web-developer/greta-live-share/blog/www/post par exemple
+
+    if (!empty($params)) {
+        $url .= '?' . http_build_query($params);
+    };
+
+    return $url;
+}

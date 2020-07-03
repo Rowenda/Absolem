@@ -88,7 +88,7 @@ $query->execute();
 
 $users = $query->fetchall();
 
-render('admin',
+render('admin/admin',
 [
         'tutos' => $tutos,
         'creations' => $creations,
