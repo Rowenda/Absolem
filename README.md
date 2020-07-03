@@ -15,9 +15,13 @@ Créez un dossier Creabsolem dans lequel importez l'ensemble des éléments.
 
 Veuillez respecter l'arborescence des fichiers:
 ->Creabsolem/
+
 -->src/
+
 -->vendor/
+
 -->views/
+
 -->www/
 
 Veuillez installez la base de donnée creabsolem.sql sur votre gestionnaire de base de donnée.
