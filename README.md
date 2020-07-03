@@ -14,6 +14,7 @@ Le site utilisera une authentification pour permettre aux membres d'agir sur les
 Créez un dossier Creabsolem dans lequel importez l'ensemble des éléments.
 
 Veuillez respecter l'arborescence des fichiers:
+
 ->Creabsolem/
 
 -->src/
